@@ -7,6 +7,17 @@ export const colors = {
 }
 
 
+// FONT SIZES //
+
+export const fontSizes = {
+    title: '2.5rem',
+    subTitle: '1.8rem',
+    text: '1.1rem'
+}
+
+
+// BREAKPOINTS //
+
 export const breakpoints = {
     small: '480px',
     medium: '768px',
