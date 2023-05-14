@@ -12,3 +12,17 @@ html{
 body{
   font-family: 'Poppins', sans-serif;
 }
+
+button{
+  background: none;
+  border: none;
+  color: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
