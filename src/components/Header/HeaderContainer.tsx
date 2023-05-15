@@ -1,13 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import { colors, fontSizes } from '../../data';
-import { Header, SplashHeader } from '.';
-
-const HeaderContainerStyle = styled.header`
-	color: ${colors.white};
-	font-size: ${fontSizes.text};
-	width: 100%;
-`;
+import { Header, HeaderContainerStyle, SplashHeader } from '.';
 
 interface HeaderContainerProps {
 

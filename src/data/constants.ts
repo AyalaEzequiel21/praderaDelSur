@@ -11,8 +11,9 @@ export const colors = {
 
 export const fontSizes = {
     title: '2.5rem',
-    subTitle: '1.8rem',
-    text: '1.1rem'
+    subTitle: '1.5rem',
+    itemNav: '1.1rem',
+    text: '.8rem'
 }
 
 

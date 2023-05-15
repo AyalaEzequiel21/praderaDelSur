@@ -1,29 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { ItemNav, NavContainer, NavMenu } from '.';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 interface NavProps {
 }
-
-const NavContainer = styled.div`
-
-`
-
-const NavMenu = styled.nav`
-
-`
-
-const ItemNav = styled.li`
-
-`
 
 const Nav: React.FC<NavProps> = () => {
 	return (
 		<NavContainer>
 			<NavMenu>
-				<Link to={'/'}><ItemNav>Inicio</ItemNav></Link>
-				<Link to={'#'}><ItemNav>Productos</ItemNav></Link>
-				<Link to={'#'}><ItemNav>Contacto</ItemNav></Link>
+				<ItemNav><Link to={'/'}>INICIO</Link></ItemNav>
+				<ItemNav><Link to={'#'}>PRODUCTOS</Link></ItemNav>
+				<ItemNav><Link to={'#'}>BOUTIQUE {<ShoppingCartIcon/>}</Link></ItemNav>
+				<ItemNav><Link to={'#'}>CONTACTO</Link></ItemNav>
 			</NavMenu>
 		</NavContainer>
 	);
