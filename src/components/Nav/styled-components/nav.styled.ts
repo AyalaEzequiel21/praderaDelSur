@@ -1,19 +1,19 @@
 import styled from "styled-components"
 import { colors, fontSizes } from "../../../data"
 
-export const NavContainer = styled.div`
+export const NavContainerStyle = styled.div`
     align-items: center;
     display: flex;
     justify-content: center;
 `
 
-export const NavMenu = styled.nav`
+export const NavMenuStyle = styled.nav`
     align-items: center;
     display: flex;
     justify-content: space-around;
 `
 
-export const ItemNav = styled.li`
+export const ItemNavStyle = styled.li`
     margin: 0 7px;
 
     & a{

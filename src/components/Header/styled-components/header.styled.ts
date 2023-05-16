@@ -32,9 +32,3 @@ z-index: 200;
     width: 15rem;
 }
 `
-
-export const HamburgerBtn = styled.button`
-align-items: center;
-display: flex;
-justify-content: center;
-`

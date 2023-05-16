@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { breakpoints, colors } from "../../../data"
 
-export const SplashContainer = styled.div`
+export const SplashContainerStyle = styled.div`
     height: 16rem;
 	width: 100%;
     position: absolute;
@@ -15,7 +15,7 @@ export const SplashContainer = styled.div`
     }
 `
 
-export const ImageSplash = styled.img`
+export const ImageSplashStyle = styled.img`
     height: 100%;
     width: 100%;
 
@@ -24,7 +24,7 @@ export const ImageSplash = styled.img`
     }
 `
 
-export const TextContainer = styled.div`
+export const TextContainerStyle = styled.div`
     color: ${colors.white}; 
     margin: auto 0;
     position: relative;
@@ -36,7 +36,7 @@ export const TextContainer = styled.div`
     }
 `
 
-export const Title = styled.h1`
+export const TitleStyle = styled.h1`
     font-size: 1.9rem;
     margin: 0 auto;
     max-width: 90%;
@@ -47,7 +47,7 @@ export const Title = styled.h1`
     }
 `
 
-export const Subtitle = styled.h3`
+export const SubtitleStyle = styled.h3`
     font-size: 1.3rem;
     font-weight: 300;
 

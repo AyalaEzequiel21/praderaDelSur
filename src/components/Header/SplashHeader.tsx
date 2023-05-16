@@ -1,6 +1,6 @@
 import React from 'react'
 import splashImg from '../../assets/splash3.jpg'
-import { ImageSplash, SplashContainer, Subtitle, TextContainer, Title } from '.'
+import { ImageSplashStyle, SplashContainerStyle, SubtitleStyle, TextContainerStyle, TitleStyle } from '.'
 
 interface SplashHeaderProps {
 }
@@ -10,13 +10,13 @@ interface SplashHeaderProps {
 
 const SplashHeader: React.FC<SplashHeaderProps> = () => {
   return (
-    <SplashContainer>
-        <ImageSplash src={splashImg}/>
-        <TextContainer>
-            <Subtitle>Productos de excelencia</Subtitle>
-            <Title>DESDE HACE MAS DE UNA DECADA</Title>
-        </TextContainer>
-    </SplashContainer>
+    <SplashContainerStyle>
+        <ImageSplashStyle src={splashImg}/>
+        <TextContainerStyle>
+            <SubtitleStyle>Productos de excelencia</SubtitleStyle>
+            <TitleStyle>DESDE HACE MAS DE UNA DECADA</TitleStyle>
+        </TextContainerStyle>
+    </SplashContainerStyle>
   )
 }
 
