@@ -16,7 +16,7 @@ const MenuMoble: React.FC<MenuMobileProps> = () => {
         <MenuContainerStyle>
             <HamburgerBtnStyle onClick={toggleMenu}>☰</HamburgerBtnStyle>
             {isOpen && (
-                <MenuStyle onClick={toggleMenu}>
+                <MenuStyle onClick={toggleMenu} isOpen={isOpen}>
                     <ItemMenu><Link to={'/'}>INICIO</Link></ItemMenu>
                     <ItemMenu><Link to={'/'}>PRODUCTOS</Link></ItemMenu>
                     <ItemMenu><Link to={'/'}>TIENDA {<ShoppingCartIcon/>}</Link></ItemMenu>
