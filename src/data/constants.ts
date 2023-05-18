@@ -20,7 +20,10 @@ export const fontSizes = {
 // BREAKPOINTS //
 
 export const breakpoints = {
-    small: '480px',
-    medium: '768px',
-    large: '1024px'
+    smallPX: '480px',
+    mediumPX: '768px',
+    largePX: '1024px',
+    smallW: 480,
+    mediumW: 768,
+    largeW: 1024
 }

@@ -19,13 +19,13 @@ position: relative;
 right: 2rem;
 z-index: 200;
 
-@media(min-width:${breakpoints.medium}){
+@media(min-width:${breakpoints.mediumPX}){
     height: 10rem;
     width: 14rem;
     right: 1.5rem;
 };
 
-@media(min-width:${breakpoints.large}){
+@media(min-width:${breakpoints.largePX}){
     height: 11rem;
     margin-top: 5.5rem;
     right: 1rem;

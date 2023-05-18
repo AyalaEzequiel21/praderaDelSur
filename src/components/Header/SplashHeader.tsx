@@ -5,7 +5,6 @@ import { ImageSplashStyle, SplashContainerStyle, SubtitleStyle, TextContainerSty
 interface SplashHeaderProps {
 }
 
-
 // this component is a container for an image and other container with text
 
 const SplashHeader: React.FC<SplashHeaderProps> = () => {
