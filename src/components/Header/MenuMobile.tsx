@@ -20,7 +20,7 @@ const MenuMoble: React.FC<MenuMobileProps> = () => {
                     <ItemMenu><Link to={'/'}>INICIO</Link></ItemMenu>
                     <ItemMenu><Link to={'/'}>PRODUCTOS</Link></ItemMenu>
                     <ItemMenu><Link to={'/'}>TIENDA {<ShoppingCartIcon/>}</Link></ItemMenu>
-                    <ItemMenu><Link to={'/'}>CONTACTO</Link></ItemMenu>
+                    <ItemMenu><Link to={'/contact'}>CONTACTO</Link></ItemMenu>
                 </MenuStyle>
             )}
         </MenuContainerStyle>

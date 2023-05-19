@@ -13,7 +13,7 @@ const Nav: React.FC<NavProps> = () => {
 				<ItemNavStyle><Link to={'/'}>INICIO</Link></ItemNavStyle>
 				<ItemNavStyle><Link to={'#'}>PRODUCTOS</Link></ItemNavStyle>
 				<ItemNavStyle><Link to={'#'}>TIENDA {<ShoppingCartIcon/>}</Link></ItemNavStyle>
-				<ItemNavStyle><Link to={'#'}>CONTACTO</Link></ItemNavStyle>
+				<ItemNavStyle><Link to={'/contact'}>CONTACTO</Link></ItemNavStyle>
 			</NavMenuStyle>
 		</NavContainerStyle>
 	);

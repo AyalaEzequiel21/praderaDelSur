@@ -1,7 +1,8 @@
-import './App.css'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import { Footer, HeaderContainer } from './components'
 import GlobalContext from './context/GlobalContext'
+import { MainLayoutStyle } from './styled-components'
+import { Contact, Home } from './pages'
 
 function App() {
 
@@ -9,11 +10,12 @@ function App() {
     <BrowserRouter basename='/'>
       <GlobalContext>
         <HeaderContainer/>
-        <main className='main'>
+        <MainLayoutStyle>
           <Routes>
-            <Route />
+            <Route path='/' element={<Home/>}/>
+            <Route path='/contact' element={<Contact/>}/>
           </Routes>
-        </main>
+        </MainLayoutStyle>
         <Footer/>
       </GlobalContext>
     </BrowserRouter>
