@@ -9,8 +9,8 @@ export const MainLayoutStyle = styled.main`
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    max-width: 1500px;
+    flex-direction: column;
     min-height: 70vh;
     object-fit: cover;
+    width: 100%;
 `

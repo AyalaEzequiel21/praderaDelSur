@@ -1,5 +1,5 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
-import { Footer, HeaderContainer } from './components'
+import { Footer, HeaderContainer, Splash } from './components'
 import GlobalContext from './context/GlobalContext'
 import { MainLayoutStyle } from './styled-components'
 import { Contact, Home } from './pages'
@@ -11,6 +11,7 @@ function App() {
       <GlobalContext>
         <HeaderContainer/>
         <MainLayoutStyle>
+          <Splash/>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/contact' element={<Contact/>}/>

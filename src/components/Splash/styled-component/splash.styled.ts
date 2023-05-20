@@ -1,11 +1,10 @@
 import styled from "styled-components"
-import { breakpoints, colors } from "../../../data"
+import { breakpoints, colors, fontSizes } from "../../../data"
 
 export const SplashContainerStyle = styled.div`
     height: 16rem;
 	width: 100%;
-    position: absolute;
-
+    
     @media(min-width: ${breakpoints.mediumPX}){
         height: 22rem;
     };
@@ -18,10 +17,7 @@ export const SplashContainerStyle = styled.div`
 export const ImageSplashStyle = styled.img`
     height: 100%;
     width: 100%;
-
-    @media(min-width: ${breakpoints.mediumPX}){
-        object-fit:cover
-    }
+    object-fit:cover
 `
 
 export const TextContainerStyle = styled.div`
@@ -37,7 +33,7 @@ export const TextContainerStyle = styled.div`
 `
 
 export const TitleStyle = styled.h1`
-    font-size: 1.9rem;
+    font-size: ${fontSizes.title};
     margin: 0 auto;
     max-width: 90%;
     line-height: 1.2;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, HeaderContainerStyle, SplashHeader } from '.';
+import { Header, HeaderContainerStyle } from '.';
 
 interface HeaderContainerProps {
 
@@ -14,7 +14,6 @@ const HeaderContainer: React.FC<HeaderContainerProps> = () => {
 	return (
 		<HeaderContainerStyle >
 			<Header/>
-			<SplashHeader />
 		</HeaderContainerStyle>
 	)
 };
