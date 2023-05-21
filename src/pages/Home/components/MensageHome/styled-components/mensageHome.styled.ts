@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { colors, fontSizes } from "../../../../../data";
+import { breakpoints, colors, fontSizes } from "../../../../../data";
 
 
 export const MensageHomeStyle = styled.div`
@@ -8,19 +8,27 @@ export const MensageHomeStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 1000px;
     padding: 20px 0;
     text-align: center;
 
 
     & h1{
         font-size: ${fontSizes.subTitle};
-        max-width: 1000px;
-        padding: 5px
+        padding: 5px;
+
+        @media(min-width: ${breakpoints.mediumPX}){
+            padding: 5px 30px;
+        }
     };
 
     & p{
         font-size: ${fontSizes.text};
-        padding: 10px;
+        padding: 15px;
+
+        @media(min-width: ${breakpoints.mediumPX}){
+            padding: 5px 35px;
+        }
     }
 
 `
