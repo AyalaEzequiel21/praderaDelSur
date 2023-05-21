@@ -1,13 +1,19 @@
 import React from 'react';
-import { IconsBoxStyle } from '.';
+import { IconItemStyle, IconsBoxStyle } from '.';
+import { iconsBoxData } from '../../../../data';
 
-export type IconsBoxProps = {
+export interface IconsBoxProps {
 }
 
 const IconsBox: React.FC<IconsBoxProps> = () => {
 	return (
 		<IconsBoxStyle>
-			
+			{iconsBoxData.map(item => (
+				<IconItemStyle>
+					<item.icon/>
+					<p>{item.text}</p>
+				</IconItemStyle>
+			))}
 		</IconsBoxStyle>
 	)
 };

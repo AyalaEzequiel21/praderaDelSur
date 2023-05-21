@@ -8,27 +8,22 @@ export const MensageHomeStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1000px;
-    padding: 20px 0;
+    margin: 20px 0;
+    max-width: 500px;
+    padding: 20px;
     text-align: center;
 
+    @media(min-width: ${breakpoints.mediumPX}){
+        max-width: 800px;
+    };
 
     & h1{
         font-size: ${fontSizes.subTitle};
-        padding: 5px;
-
-        @media(min-width: ${breakpoints.mediumPX}){
-            padding: 5px 30px;
-        }
+        margin-bottom: 15px;
     };
 
     & p{
         font-size: ${fontSizes.text};
-        padding: 15px;
-
-        @media(min-width: ${breakpoints.mediumPX}){
-            padding: 5px 35px;
-        }
     }
 
 `

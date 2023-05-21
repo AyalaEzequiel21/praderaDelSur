@@ -5,6 +5,6 @@ export const HomeStyle = styled.section`
     display: flex;
     flex-direction: column;
     height: 100%;
-    justifi-content: center;   
-    max-width: 1800px;
+    width: 80%
+    
 `

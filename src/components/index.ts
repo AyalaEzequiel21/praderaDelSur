@@ -6,6 +6,7 @@ export * from './Header/styled-components/headerContainer.styled';
 export * from './Header/styled-components/menuMobile.styled';
 export * from './Nav';
 export * from './Nav/styled-components/nav.styled';
+export * from './Separator';
+export * from './Separator/styled-component/separator.styled';
 export * from './Splash';
 export * from './Splash/styled-component/splash.styled';
-export * from './index';
