@@ -4,6 +4,7 @@ import { MensageHomeStyle } from './styled-components/mensageHome.styled';
 export interface MensageHomeProps {
 }
 
+// this component have the first message for the home, one title with a text under.
 const MensageHome: React.FC<MensageHomeProps> = () => {
 	return (
 		<MensageHomeStyle>
