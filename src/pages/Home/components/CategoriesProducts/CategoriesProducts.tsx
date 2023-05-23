@@ -1,5 +1,5 @@
 import React from 'react';
-import { CategoriesContainerStyle } from '.';
+import { CardsContainerStyle, CategoriesContainerStyle } from '.';
 import { Categorie } from '../../../../data';
 import { CardCategorieProduct } from '../CardCategorieProduct';
 
@@ -16,11 +16,11 @@ const CategoriesProducts: React.FC<CategoriesProductsProps> = ({dataCategories, 
 		<CategoriesContainerStyle>
 			<h1>{title}</h1>
 			<p>{subTitle}</p>
-			<CategoriesContainerStyle>
+			<CardsContainerStyle>
 				{dataCategories.map(item => (
 					<CardCategorieProduct key={item.id} categorie={item}/>
 				))}
-			</CategoriesContainerStyle>
+			</CardsContainerStyle>
 		</CategoriesContainerStyle>
 	);
 };

@@ -1,12 +1,11 @@
 import { styled } from "styled-components";
-import { breakpoints, colors, fontSizes } from "../../../../../data";
+import { breakpoints, colors, fontSizes, shadows } from "../../../../../data";
 
 
 export const IconsBoxStyle = styled.div`
     align-items: center;
     border-radius: 50px;
-    box-shadow:  20px 20px 60px #d0d1d0,
-    -20px -20px 60px #ffffff;
+    box-shadow: ${shadows.shadowStyle};
     display: flex;
     flex-direction: column;
     justify-content: space-around;

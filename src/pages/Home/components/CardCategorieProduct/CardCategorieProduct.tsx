@@ -1,6 +1,7 @@
 import React from 'react';
 import { Categorie } from '../../../../data';
-import { CardCategorieStyle } from '.';
+import { ActionContainerCardStyle, CardCategorieStyle } from '.';
+import { Button } from '../../../../components';
 
 export interface CardCategorieProductProps {
 	categorie: Categorie,
@@ -11,8 +12,10 @@ export interface CardCategorieProductProps {
 const CardCategorieProduct: React.FC<CardCategorieProductProps> = ({categorie}) => {
 	return (
 		<CardCategorieStyle imageUrl={categorie.imageUrl}>
-			{/* <img src={categorie.imageUrl} alt='Image categorie'/> */}
-			<h3>{categorie.title}</h3>
+			<ActionContainerCardStyle>
+				<h3>{categorie.title}</h3>
+				<Button label='Ver todos'/>
+			</ActionContainerCardStyle>
 		</CardCategorieStyle>
 	);
 };

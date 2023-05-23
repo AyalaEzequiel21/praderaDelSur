@@ -27,3 +27,16 @@ export const breakpoints = {
     mediumW: 768,
     largeW: 1024
 }
+
+//SHADOW
+
+export const shadows = {
+    shadowStyle: ' 20px 20px 60px #d0d1d0, -20px -20px 60px #ffffff',
+    shadowCardStyle: ' 20px 20px 15px #d0d1d0, -20px -20px 60px #ffffff'
+}
+
+// LIMITS
+
+export const limits = {
+    maxWidth: '1300px',
+}

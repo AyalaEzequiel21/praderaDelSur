@@ -1,3 +1,5 @@
+export * from './Button';
+export * from './Button/styled-component/button.styled';
 export * from './Footer';
 export * from './Footer/styled-component/footer.styled';
 export * from './Header';
