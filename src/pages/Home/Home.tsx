@@ -4,6 +4,7 @@ import { HomeStyle } from './styled-components/home.styled';
 import { Separator } from '../../components';
 import { CategoriesProducts } from './components/CategoriesProducts';
 import { categories, titleProducts, subTitleProducts, iconsBoxData } from '../../data';
+import { SplashContactUs } from '..';
 
 
 export interface HomeProps {
@@ -16,6 +17,8 @@ const Home: React.FC<HomeProps> = () => {
 			<IconsBox data={iconsBoxData}/>
 			<Separator/>
 			<CategoriesProducts dataCategories={categories} title={titleProducts} subTitle={subTitleProducts}/>
+			<Separator/>
+			<SplashContactUs/>
 		</HomeStyle>
 	)
 };

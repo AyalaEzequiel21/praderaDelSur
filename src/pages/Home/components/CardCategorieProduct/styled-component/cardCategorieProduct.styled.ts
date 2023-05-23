@@ -44,5 +44,6 @@ export const ActionContainerCardStyle = styled.div`
     & h3{
         color: ${colors.white};
         font-size: ${fontSizes.subTitle};
+        margin-bottom: 10px;
     }
 `

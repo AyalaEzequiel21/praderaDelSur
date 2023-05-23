@@ -22,7 +22,7 @@ export const categories: Categorie[] = [
     {
         id: 2,
         title: 'PRODUCTOS COCIDOS',
-        imageUrl: `${imgCocido}}`
+        imageUrl: `${imgCocido}`
     },
     {
         id: 3,
