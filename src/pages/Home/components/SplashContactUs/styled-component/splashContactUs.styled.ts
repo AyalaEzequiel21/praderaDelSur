@@ -25,25 +25,21 @@ export const SplashContainerStyle = styled.div<SplashContainerProps>`
     };
 
     @media(min-width: ${breakpoints.largePX}){
-        height: 20rem;
+        height: 22rem;
     };
 `
 
 export const ActionContainerSplashStyle = styled.div`
     align-items: center;
+    background: rgba(255,255,255,.01);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 90%;
     justify-content: center;
     padding: 20px 0;
     width: 90%;
-
-    &:hover{
-        background: rgba(255,255,255,.01);
-        backdrop-filter: blur(10px);
-        transition: 0.2s;
-    };
 
     @media(min-width: ${breakpoints.mediumPX}){
         height: 16rem;
@@ -51,20 +47,28 @@ export const ActionContainerSplashStyle = styled.div`
     };
 
     @media(min-width: ${breakpoints.largePX}){
-        height: 18rem;
+        background: none;
+        backdrop-filter: none;
+        height: 20rem;
         width: 50%;
+
+        &:hover{
+            background: rgba(255,255,255,.01);
+            backdrop-filter: blur(10px);
+            transition: 0.2s;
+        };
     }
 
     & h3{
         color: ${colors.white};
-        font-size: ${fontSizes.itemNav};
-        line-height: 1.2;
+        font-size: ${fontSizes.text};
+        line-height: 1.3;
         margin-bottom: 10px;
         text-align: center;
+        width: 90%;
 
         @media(min-width: ${breakpoints.mediumPX}){
-            font-size: ${fontSizes.subTitle};
-            line-height: 1.5;
+            line-height: 1.7;
             margin-bottom: 20px;
         }
     };

@@ -22,11 +22,11 @@ export const FooterStyle = styled.footer`
 
 export const LogoFooterStyle = styled.img`
     grid-area: logo;
-    height: 6rem;
+    height: 7rem;
     width: 10rem;
 
     @media(min-width:${breakpoints.mediumPX}){
-        height: 7rem;
+        height: 8rem;
         width: 11rem;
         margin: 20px;
     }

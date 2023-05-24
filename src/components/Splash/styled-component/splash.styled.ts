@@ -39,7 +39,7 @@ export const TitleStyle = styled.h1`
     line-height: 1.2;
 
     @media(min-width: ${breakpoints.mediumPX}){
-        font-size: 2.5rem;
+        
     }
 `
 

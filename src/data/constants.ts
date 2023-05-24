@@ -10,10 +10,10 @@ export const colors = {
 // FONT SIZES //
 
 export const fontSizes = {
-    title: '2rem',
-    subTitle: '1.3rem',
-    itemNav: '1.1rem',
-    text: '.8rem'
+    title: '2.5rem',
+    subTitle: '1.7rem',
+    itemNav: '1.3rem',
+    text: '1.1rem'
 }
 
 
