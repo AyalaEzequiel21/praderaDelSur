@@ -8,7 +8,7 @@ export const ButtonStyle = styled.button`
     display: flex;
     color: ${colors.white};
     cursor: pointer;
-    font-size: ${fontSizes.itemNav};
+    font-size: ${fontSizes.subTitle};
     height: 2.5rem;
     justify-content: center;
     width: 7rem;

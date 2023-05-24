@@ -14,11 +14,15 @@ export const CardCategorieStyle = styled.article<CardCategorieStyleProp>`
     border-radius: 25px;
     box-shadow: ${shadows.shadowCardStyle};
     display: flex;
-    height: 15rem;
+    height: 14.5rem;
     justify-content: center;
     margin: 30px 0;
     object-fit: cover;
-    width: 25rem;
+    width: 23rem;
+
+    @media(min-width: ${breakpoints.largePX}){
+        width: 25rem;
+    };
     
     @media(min-width: ${breakpoints.largePX}){
         margin: 30px 50px;
