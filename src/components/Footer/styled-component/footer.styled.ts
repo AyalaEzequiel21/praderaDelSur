@@ -39,7 +39,7 @@ export const ContainerDataStyle = styled.div`
     text-align: center;
 
     & p {
-        font-size: ${fontSizes.text};
+        font-size: ${fontSizes.itemFooter};
         padding: 5px 0;
 
         & a{
