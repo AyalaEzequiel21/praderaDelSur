@@ -8,10 +8,10 @@ export const ButtonStyle = styled.button`
     display: flex;
     color: ${colors.white};
     cursor: pointer;
-    font-size: ${fontSizes.itemNav};
-    height: 2.5rem;
+    font-size: ${fontSizes.btn};
+    height: 2.7rem;
     justify-content: center;
-    width: 7rem;
+    padding: 5px 20px;
 
     &:hover{
         background-color: transparent;

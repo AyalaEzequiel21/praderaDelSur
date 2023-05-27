@@ -1,16 +1,17 @@
 import React from 'react';
-import img from '../../../../assets/contactUs.jpg'
 import { ActionContainerSplashStyle, SplashContainerStyle } from '.';
 import { Button } from '../../../../components';
+import { SplashData } from '../../../../data/homeData/splashContactUs.data';
 
 export interface SplashContactUsProps {
+	data: SplashData
 }
 
-const SplashContactUs: React.FC<SplashContactUsProps> = () => {
+const SplashContactUs: React.FC<SplashContactUsProps> = ({data}) => {
 	return (
-		<SplashContainerStyle imageUrl={img}>
+		<SplashContainerStyle imageUrl={data.imgUrl}>
 			<ActionContainerSplashStyle>
-				<h3>Consulta y asesoramiento personalizado. ¡Estamos aquí para ayudarte! Completa el formulario y te contactaremos pronto</h3>
+				<h3>{data.text}</h3>
 				<Button label='Contacto'/>
 			</ActionContainerSplashStyle>
 		</SplashContainerStyle>

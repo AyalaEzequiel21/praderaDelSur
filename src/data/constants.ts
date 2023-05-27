@@ -13,6 +13,7 @@ export const fontSizes = {
     title: '2.5rem',
     subTitle: '1.8rem',
     itemNav: '1.2rem',
+    btn: '1.4rem',
     text: '1.1rem',
     itemFooter: '1rem',
 }

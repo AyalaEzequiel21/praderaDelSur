@@ -38,7 +38,6 @@ export const ActionContainerSplashStyle = styled.div`
     flex-direction: column;
     height: 90%;
     justify-content: center;
-    padding: 20px 0;
     width: 90%;
 
     @media(min-width: ${breakpoints.mediumPX}){
@@ -68,8 +67,13 @@ export const ActionContainerSplashStyle = styled.div`
         width: 90%;
 
         @media(min-width: ${breakpoints.mediumPX}){
+            font-size: ${fontSizes.itemNav};
             line-height: 1.7;
             margin-bottom: 20px;
+        };
+
+        @media(min-width: ${breakpoints.largePX}){
+            font-size: ${fontSizes.subTitle};
         }
     };
 `

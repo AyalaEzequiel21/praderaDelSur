@@ -1,6 +1,13 @@
 export { default as Home } from './Home';
+export * from './components/CardCategorieProduct';
+export * from './components/CardCategorieProduct/styled-component/cardCategorieProduct.styled';
+export * from './components/CategoriesProducts';
+export * from './components/CategoriesProducts/styled-component/categoriesProducts.styled';
 export * from './components/IconsBox';
 export * from './components/IconsBox/styled-component/iconsBox.styled';
 export * from './components/MensageHome';
 export * from './components/MensageHome/styled-components/mensageHome.styled';
+export * from './components/SplashContactUs';
+export * from './components/SplashContactUs/styled-component/splashContactUs.styled';
+export * from './index';
 export * from './styled-components/home.styled';

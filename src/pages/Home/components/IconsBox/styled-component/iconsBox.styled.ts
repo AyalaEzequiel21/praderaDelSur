@@ -33,7 +33,7 @@ export const IconItemStyle = styled.div`
     color: ${colors.green};
     flex-direction: column;
     margin: 25px 0;
-    width: 170px;
+    width: 180px;
 
     @media(min-width: ${breakpoints.mediumPX}){
         margin: 25px;

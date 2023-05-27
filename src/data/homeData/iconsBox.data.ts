@@ -14,7 +14,7 @@ export const iconsBoxData: IconData[] = [
     {
         id:1,
         icon: FaAward,
-        text: 'Calidad impecable y selección cuidadosa de materias primas en cada producto'
+        text: 'Calidad y selección meticulosa de materias primas en cada producto'
     },
     {
         id:2,
@@ -24,6 +24,6 @@ export const iconsBoxData: IconData[] = [
     {
         id:3,
         icon: FaHandshake,
-        text: 'Compromiso social de trabajo fomentando el crecimiento y capacitación'
+        text: 'Compromiso social, trabajo y crecimiento capacitado'
     }   
 ]

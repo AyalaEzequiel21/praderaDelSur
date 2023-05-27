@@ -3,7 +3,7 @@ import { IconsBox, MensageHome } from '.';
 import { HomeStyle } from './styled-components/home.styled';
 import { Separator } from '../../components';
 import { CategoriesProducts } from './components/CategoriesProducts';
-import { categories, titleProducts, subTitleProducts, iconsBoxData } from '../../data';
+import { categories, titleProducts, subTitleProducts, iconsBoxData, splashContactUsData } from '../../data';
 import { SplashContactUs } from '..';
 
 
@@ -18,7 +18,7 @@ const Home: React.FC<HomeProps> = () => {
 			<Separator/>
 			<CategoriesProducts dataCategories={categories} title={titleProducts} subTitle={subTitleProducts}/>
 			<Separator/>
-			<SplashContactUs/>
+			<SplashContactUs data={splashContactUsData}/>
 		</HomeStyle>
 	)
 };
