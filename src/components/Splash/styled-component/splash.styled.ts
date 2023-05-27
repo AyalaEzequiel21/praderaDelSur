@@ -33,13 +33,13 @@ export const TextContainerStyle = styled.div`
 `
 
 export const TitleStyle = styled.h1`
-    font-size: ${fontSizes.title};
+    font-size: ${fontSizes.titleMobile};
     margin: 0 auto;
     max-width: 90%;
     line-height: 1.2;
 
     @media(min-width: ${breakpoints.mediumPX}){
-        
+        font-size: ${fontSizes.title};
     }
 `
 

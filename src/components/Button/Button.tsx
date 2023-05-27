@@ -3,11 +3,12 @@ import { ButtonStyle } from '.';
 
 export interface ButtonProps {
 	label: string,
+	onClick: ()=> void
 }
 
-const Button: React.FC<ButtonProps> = ({label}) => {
+const Button: React.FC<ButtonProps> = ({label, onClick}) => {
 	return (
-		<ButtonStyle>
+		<ButtonStyle onClick={onClick}>
 			{label}
 		</ButtonStyle>
 	);
