@@ -6,5 +6,6 @@ export const MessageContactStyle = styled.div`
     color: ${colors.green};
     display: flex;
     flex-direction: column;
+    grid-area: message;
     justify-content: center;
 `

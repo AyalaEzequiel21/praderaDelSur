@@ -8,8 +8,8 @@ const Contact: React.FC<ContactProps> = () => {
 	return (
 		<ContactStyle>
 			<MessageContact/>
-			<Form/>
 			<InfoContact/>
+			<Form/>
 		</ContactStyle>
 	)
 };

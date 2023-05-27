@@ -7,7 +7,7 @@ export interface FormProps {
 const Form: React.FC<FormProps> = () => {
 	return (
 		<FormContainerStyle>
-			
+				FORM
 		</FormContainerStyle>
 	)
 };
