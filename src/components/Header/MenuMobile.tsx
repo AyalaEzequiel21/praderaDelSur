@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { HamburgerBtnStyle, ItemMenu, MenuContainerStyle, MenuStyle } from '.'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
+import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 interface MenuMobileProps {}
 
@@ -19,7 +18,7 @@ const MenuMoble: React.FC<MenuMobileProps> = () => {
                 <MenuStyle onClick={toggleMenu} isOpen={isOpen}>
                     <ItemMenu><Link to={'/'}>INICIO</Link></ItemMenu>
                     <ItemMenu><Link to={'/'}>PRODUCTOS</Link></ItemMenu>
-                    <ItemMenu><Link to={'/'}>TIENDA {<ShoppingCartIcon/>}</Link></ItemMenu>
+                    <ItemMenu><Link to={'/'}>TIENDA {<AiOutlineShoppingCart/>}</Link></ItemMenu>
                     <ItemMenu><Link to={'/contact'}>CONTACTO</Link></ItemMenu>
                 </MenuStyle>
             )}
