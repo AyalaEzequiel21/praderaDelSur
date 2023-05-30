@@ -6,7 +6,7 @@ export const ContactStyle = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 20px 10px;
 
     @media(min-width: ${breakpoints.mediumPX}){
         display: grid;

@@ -1,13 +1,13 @@
 import { IconType } from 'react-icons'
 import {HiOutlineMail, HiOutlineCalendar, HiOutlinePhone, HiOutlineLocationMarker} from 'react-icons/hi'
 
-export interface ItemInfoContact{
+export interface ItemInfoContactInterface{
     id: string,
     icon: IconType,
     text: string,
 }
 
-export const infoContact: ItemInfoContact[] = [
+export const infoContactData: ItemInfoContactInterface[] = [
     {
         id: 'Horarios',
         icon: HiOutlineCalendar,
@@ -16,7 +16,7 @@ export const infoContact: ItemInfoContact[] = [
 
     {
         id: 'Dirección',
-        icon: HiOutlineCalendar,
+        icon: HiOutlineLocationMarker,
         text: 'Av. Caminno Gral Belgrano N°1505 - Berazategui'
     },
 

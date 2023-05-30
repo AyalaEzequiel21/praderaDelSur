@@ -8,3 +8,7 @@ export const InfoContactContainerStyle = styled.div`
     margin: 10px;
     width: 90%;
 `
+
+export const ItemsInfoContainerStyle = styled.div`
+
+`
