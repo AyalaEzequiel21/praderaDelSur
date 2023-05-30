@@ -1,29 +1,33 @@
 import React from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { MapContainerStyle } from '.';
+import { API_KEY_MAP } from '../../../../data';
 
 export interface MapProps {
 }
 
 const containerStyle = {
-    width: '400px',
-    height: '400px'
+	borderRadius: '10px',
+    width: '100%',
+    height: '100%'
   };
 
   const center = {
-    lat: 37.7749, // Latitud de la ubicación central
-    lng: -122.4194 // Longitud de la ubicación central
+    lat: -34.786278, // Latitud de la ubicación central
+    lng: -58.252689 // Longitud de la ubicación central
   };
 
 const Map: React.FC<MapProps> = () => {
 	return (
 		<MapContainerStyle>
-			<LoadScript googleMapsApiKey="AIzaSyCrv2pzax5GfgvdFiFKQC6qT4wNEnhFyPI">
-			<GoogleMap
-				mapContainerStyle={containerStyle}
-				center={center}
-				zoom={10} // Nivel de zoom inicial
-			/>
+			<LoadScript googleMapsApiKey={API_KEY_MAP}>
+				<GoogleMap
+					mapContainerStyle={containerStyle}
+					center={center}
+					zoom={15} // Nivel de zoom inicial
+				>
+					<Marker position={center}/>
+				</GoogleMap>
 			</LoadScript>
 		</MapContainerStyle>
 	)
