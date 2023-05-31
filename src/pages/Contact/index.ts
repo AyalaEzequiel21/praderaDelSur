@@ -1,6 +1,5 @@
 export { default as Contact } from './Contact';
 export * from './components/Form';
-export * from './components/Form/styled-component/form.styled';
 export * from './components/FormContainer';
 export * from './components/FormContainer/styled-component/formContainer.styled';
 export * from './components/InfoContact';

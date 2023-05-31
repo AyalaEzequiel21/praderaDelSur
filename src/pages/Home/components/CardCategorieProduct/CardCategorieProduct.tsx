@@ -19,7 +19,7 @@ const CardCategorieProduct: React.FC<CardCategorieProductProps> = ({categorie}) 
 		<CardCategorieStyle imageUrl={categorie.imageUrl}>
 			<ActionContainerCardStyle>
 				<h3>{categorie.title}</h3>
-				<Button label='Ver todos' onClick={handleClick}/>
+				<Button label='Ver todos' onClick={handleClick} isSubmit={false}/>
 			</ActionContainerCardStyle>
 		</CardCategorieStyle>
 	);

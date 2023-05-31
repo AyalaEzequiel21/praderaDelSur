@@ -1,6 +1,9 @@
 import React from 'react';
 import { Formik, Field, ErrorMessage, Form  } from 'formik';
 import emailjs from 'emailjs-com'
+import { InputContainerStyle } from '.';
+import { KEYS_EMAILJS } from '../../../../data';
+import { Button } from '../../../../components';
 
 export interface FormContactProps {
 }
@@ -19,7 +22,7 @@ const FormContact: React.FC<FormContactProps> = () => {
 	) => {
 		try {
 			// Envía el correo electrónico utilizando EmailJS
-			await emailjs.send()
+			await emailjs.send(KEYS_EMAILJS.SERVICE_ID, KEYS_EMAILJS.TEMPLATE_ID, values, KEYS_EMAILJS.USER_ID)
 
 			// limpia el formulario despues del envio exitoso
 			resetForm()
@@ -47,12 +50,35 @@ const FormContact: React.FC<FormContactProps> = () => {
 		if (!values.message) {
 			errors.message = 'Este campo es requerido.';
 		}
-		
+
 		return errors;
 	}
 
 	return (
-		<>form</>
+		<Formik<FormContactValues>
+			initialValues={{fullName: '', email: '', message: ''}}
+			validate={validateForm}
+			onSubmit={handleSubmit}
+		>
+			<Form>
+				<InputContainerStyle>
+					<label htmlFor='fullName'>Nombre y Apellido</label>
+					<Field type='text' id='fullName' name='fullName'/>
+					<ErrorMessage name='fullName' component='div'/>
+				</InputContainerStyle>
+				<InputContainerStyle>
+					<label htmlFor='email'>Correo Electrónico</label>
+					<Field type='email' id='email' name='email'/>
+					<ErrorMessage name='email' component='div'/>
+				</InputContainerStyle>
+				<InputContainerStyle>
+					<label htmlFor='message'>Mensaje</label>
+					<Field type='textarea' id='message' name='message'/>
+					<ErrorMessage name='message' component='div'/>
+				</InputContainerStyle>
+				<Button label='Enviar' isSubmit={true} onClick={undefined}/>
+			</Form>
+		</Formik>
 	)
 };
 

@@ -21,7 +21,7 @@ const SplashContactUs: React.FC<SplashContactUsProps> = ({data}) => {
 		<SplashContainerStyle imageUrl={data.imgUrl}>
 			<ActionContainerSplashStyle>
 				<h3>{data.text}</h3>
-				<Button label='Contacto' onClick={handleClick}/>
+				<Button label='Contacto' onClick={handleClick} isSubmit={false}/>
 			</ActionContainerSplashStyle>
 		</SplashContainerStyle>
 	)
