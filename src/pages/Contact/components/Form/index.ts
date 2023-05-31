@@ -1,3 +1,3 @@
-export { default as Form } from './Form';
+export { default as FormContact } from './FormContact';
 export * from './index';
 export * from './styled-component/form.styled';

@@ -1,7 +1,15 @@
 export { default as Contact } from './Contact';
 export * from './components/Form';
+export * from './components/Form/styled-component/form.styled';
+export * from './components/FormContainer';
+export * from './components/FormContainer/styled-component/formContainer.styled';
 export * from './components/InfoContact';
+export * from './components/InfoContact/styled-component/infoContact.styled';
+export * from './components/ItemInfoContact';
+export * from './components/ItemInfoContact/styled-component/itemInfoContact.styled';
 export * from './components/Map';
+export * from './components/Map/styled-component/map.styled';
 export * from './components/MessageContact';
+export * from './components/MessageContact/styled-components/messageContact.styled';
 export * from './index';
 export * from './styled-components/contact.styled';

@@ -26,7 +26,7 @@ const Map: React.FC<MapProps> = () => {
 					center={center}
 					zoom={15} // Nivel de zoom inicial
 				>
-					<Marker position={center}/>
+				<Marker position={center}/>
 				</GoogleMap>
 			</LoadScript>
 		</MapContainerStyle>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactStyle, Form, InfoContact, MessageContact } from '.';
+import { ContactStyle, FormContainer, InfoContact, MessageContact } from '.';
 
 export interface ContactProps {
 }
@@ -9,7 +9,7 @@ const Contact: React.FC<ContactProps> = () => {
 		<ContactStyle>
 			<MessageContact/>
 			<InfoContact/>
-			<Form/>
+			<FormContainer/>
 		</ContactStyle>
 	)
 };
