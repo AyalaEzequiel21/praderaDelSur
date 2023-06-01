@@ -1,9 +1,10 @@
 import React from 'react';
-import { Formik, Field, ErrorMessage, Form  } from 'formik';
+import {  Field, ErrorMessage, Form, Formik  } from 'formik';
 import emailjs from 'emailjs-com'
 import { InputContainerStyle } from '.';
 import { KEYS_EMAILJS } from '../../../../data';
 import { Button } from '../../../../components';
+
 
 export interface FormContactProps {
 }
@@ -21,8 +22,9 @@ const FormContact: React.FC<FormContactProps> = () => {
 		{ setSubmitting, resetForm }: { setSubmitting: (isSubmitting: boolean) => void; resetForm: () => void }
 	) => {
 		try {
+			const formattedFormValues = values as unknown as Record<string, unknown>
 			// Envía el correo electrónico utilizando EmailJS
-			await emailjs.send(KEYS_EMAILJS.SERVICE_ID, KEYS_EMAILJS.TEMPLATE_ID, values, KEYS_EMAILJS.USER_ID)
+			await emailjs.send(KEYS_EMAILJS.SERVICE_ID, KEYS_EMAILJS.TEMPLATE_ID, formattedFormValues, KEYS_EMAILJS.USER_ID)
 
 			// limpia el formulario despues del envio exitoso
 			resetForm()
