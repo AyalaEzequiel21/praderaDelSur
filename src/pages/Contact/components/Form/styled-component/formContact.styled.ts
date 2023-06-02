@@ -33,6 +33,7 @@ export const InputContainerStyle = styled.div`
         border-radius: 5px;
         color: #555;
         font-size: 16px;
+        margin-bottom: 5px;
         outline: none;
         padding: 10px;
 

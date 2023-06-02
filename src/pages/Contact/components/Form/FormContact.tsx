@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {  Field, ErrorMessage, Form, Formik  } from 'formik';
 import emailjs from 'emailjs-com'
 import { InputContainerStyle } from '.';
-import { KEYS_EMAILJS } from '../../../../data';
+import { KEYS_EMAILJS, KEY_RECAPTCHA } from '../../../../data';
 import { Button } from '../../../../components';
+import * as Yup from 'yup';
+import ReCAPTCHA from 'react-google-recaptcha';
+
+
 
 
 export interface FormContactProps {
@@ -15,51 +19,56 @@ interface FormContactValues {
 	message: string;
 }
 
+const validationSchema = Yup.object().shape({
+	fullName: Yup.string()
+		.required('El nombre es requerido')
+		.min(3, 'El nombre debe tener al menos 3 letras'),
+	email: Yup.string()
+		.email('El correo electrónico no es válido')
+		.required('El correo electrónico es requerido'),
+	message: Yup.string()
+		.required('El mensaje es requerido')
+		.min(10, 'El mensaje debe tener al menos 10 letras')
+		.max(80, 'El mensaje no puede exceder los 80 caracteres'),
+  });
+
 const FormContact: React.FC<FormContactProps> = () => {
+
+	const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+
+	const handleCaptchaChange = (value: string | null) => {
+		if (value) {
+			setIsCaptchaVerified(true);
+		} else {
+			setIsCaptchaVerified(false);
+		}
+	};
 
 	const handleSubmit = async (
 		values: FormContactValues,
 		{ setSubmitting, resetForm }: { setSubmitting: (isSubmitting: boolean) => void; resetForm: () => void }
 	) => {
-		try {
-			const formattedFormValues = values as unknown as Record<string, unknown>
-			// Envía el correo electrónico utilizando EmailJS
-			await emailjs.send(KEYS_EMAILJS.SERVICE_ID, KEYS_EMAILJS.TEMPLATE_ID, formattedFormValues, KEYS_EMAILJS.USER_ID)
-
-			// limpia el formulario despues del envio exitoso
-			resetForm()
-			alert('El mensaje ha sido enviado correctamente.')
-		} catch (error) {
-			alert('Hubo un error al enviar el mensaje. Por favor, inténtalo nuevamente más tarde. ')
-		} finally {
-			setSubmitting(false)
-		}
-	}
-
-	const validateForm = (values: FormContactValues) => {
-		const errors: Partial<FormContactValues> = {}
-
-		if(!values.fullName) {
-			errors.fullName = 'Este campo es requerido.'
-		}
-
-		if (!values.email) {
-			errors.email = 'Este campo es requerido.';
-		} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-			errors.email = 'Dirección de correo electrónico inválida.';
-		}
-		
-		if (!values.message) {
-			errors.message = 'Este campo es requerido.';
-		}
-
-		return errors;
+		if(isCaptchaVerified){
+			try {
+				const formattedFormValues = values as unknown as Record<string, unknown>
+				// Envía el correo electrónico utilizando EmailJS
+				await emailjs.send(KEYS_EMAILJS.SERVICE_ID, KEYS_EMAILJS.TEMPLATE_ID, formattedFormValues, KEYS_EMAILJS.USER_ID)
+	
+				// limpia el formulario despues del envio exitoso
+				resetForm()
+				alert('El mensaje ha sido enviado correctamente.')
+			} catch (error) {
+				alert('Hubo un error al enviar el mensaje. Por favor, inténtalo nuevamente más tarde. ')
+			} finally {
+				setSubmitting(false)
+			}	
+		}	
 	}
 
 	return (
 		<Formik<FormContactValues>
 			initialValues={{fullName: '', email: '', message: ''}}
-			validate={validateForm}
+			validationSchema={validationSchema}
 			onSubmit={handleSubmit}
 		>
 			<Form>
@@ -78,6 +87,7 @@ const FormContact: React.FC<FormContactProps> = () => {
 					<Field as='textarea' id='message' name='message' rows={8}/>
 					<ErrorMessage name='message' component='p'/>
 				</InputContainerStyle>
+				<ReCAPTCHA sitekey={KEY_RECAPTCHA} onChange={handleCaptchaChange}/>
 				<Button label='Enviar' isSubmit={true} onClick={undefined}/>
 			</Form>
 		</Formik>

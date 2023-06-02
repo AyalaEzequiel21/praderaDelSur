@@ -6,7 +6,9 @@ export const InfoContactContainerStyle = styled.div`
     display: flex;
     flex-direction: column;
     grid-area: infoContact;
-    justify-content: center;
+    height: 630px;
+    justify-content: space-between;
+    margin: 10px 0;
     width: 90%;
     max-width: 500px;
 `

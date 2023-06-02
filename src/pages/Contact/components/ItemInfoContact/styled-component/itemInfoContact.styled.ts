@@ -4,6 +4,7 @@ import { colors, fontSizes } from "../../../../../data";
 export const ItemInfoContainerStyle = styled.article`
     align-items: center;
     color: ${colors.green};
+    margin: 15px 0;
     width: 100%;
 
     & div{

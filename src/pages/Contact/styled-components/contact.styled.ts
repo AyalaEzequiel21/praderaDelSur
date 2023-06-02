@@ -20,5 +20,10 @@ export const ContactStyle = styled.section`
         justify-content: center;
         width: 100%;
         max-width: 1200px;
+        padding: 70px 10px;
+
+        & h1{
+            margin-bottom: 20px;
+        }
     }
 `
