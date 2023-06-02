@@ -9,7 +9,7 @@ export const ButtonStyle = styled.button`
     color: ${colors.white};
     cursor: pointer;
     font-size: ${fontSizes.btn};
-    height: 2.7rem;
+    height: 2.8rem;
     justify-content: center;
     padding: 5px 20px;
 

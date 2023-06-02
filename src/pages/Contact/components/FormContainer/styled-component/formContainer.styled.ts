@@ -7,7 +7,7 @@ export const FormContainerStyle = styled.div`
     display: flex;
     flex-direction: column;
     grid-area: form;
-    height: 630px;
+    height: 650px;
     justify-content: center;
     margin: 10px 0;
     width: 90%;
@@ -25,7 +25,7 @@ export const FormContainerStyle = styled.div`
         align-items: center;
         display: flex; 
         flex-direction: column;
-        height: 560px;
+        height: 580px;
         justify-content: space-around;
         width: 90%;
 
