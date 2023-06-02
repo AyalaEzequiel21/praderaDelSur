@@ -15,7 +15,7 @@ export const ButtonStyle = styled.button`
 
     &:hover{
         background-color: transparent;
-        border: 3px solid ${colors.green};
+        border: 2px solid ${colors.green};
         color: ${colors.green};
         font-weight: bold;
         transition: 0.2s;

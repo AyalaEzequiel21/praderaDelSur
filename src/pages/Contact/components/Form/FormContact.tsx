@@ -66,17 +66,17 @@ const FormContact: React.FC<FormContactProps> = () => {
 				<InputContainerStyle>
 					<label htmlFor='fullName'>Nombre y Apellido</label>
 					<Field type='text' id='fullName' name='fullName'/>
-					<ErrorMessage name='fullName' component='div'/>
+					<ErrorMessage name='fullName' component='p'/>
 				</InputContainerStyle>
 				<InputContainerStyle>
 					<label htmlFor='email'>Correo Electrónico</label>
 					<Field type='email' id='email' name='email'/>
-					<ErrorMessage name='email' component='div'/>
+					<ErrorMessage name='email' component='p'/>
 				</InputContainerStyle>
 				<InputContainerStyle>
 					<label htmlFor='message'>Mensaje</label>
-					<Field type='textarea' id='message' name='message'/>
-					<ErrorMessage name='message' component='div'/>
+					<Field as='textarea' id='message' name='message' rows={8}/>
+					<ErrorMessage name='message' component='p'/>
 				</InputContainerStyle>
 				<Button label='Enviar' isSubmit={true} onClick={undefined}/>
 			</Form>

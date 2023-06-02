@@ -8,8 +8,10 @@ export const InfoContactContainerStyle = styled.div`
     grid-area: infoContact;
     justify-content: center;
     width: 90%;
+    max-width: 500px;
 `
 
 export const ItemsInfoContainerStyle = styled.div`
-
+    margin: 10px 0;
+    width: 100%;
 `

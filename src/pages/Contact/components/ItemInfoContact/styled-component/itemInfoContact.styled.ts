@@ -4,6 +4,7 @@ import { colors, fontSizes } from "../../../../../data";
 export const ItemInfoContainerStyle = styled.article`
     align-items: center;
     color: ${colors.green};
+    width: 100%;
 
     & div{
         align-items: center;
@@ -18,5 +19,6 @@ export const ItemInfoContainerStyle = styled.article`
     & p{
         font-size: ${fontSizes.itemNav};
         font-weight: 700;
+        width: 100%;
     }
 `

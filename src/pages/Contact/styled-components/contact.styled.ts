@@ -6,12 +6,19 @@ export const ContactStyle = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px 10px;
+    padding: 50px 10px;
 
     @media(min-width: ${breakpoints.mediumPX}){
+        align-items: center;
+        align-content: center;
         display: grid;
         grid-template-areas:
         "message message"
         "form infoContact";
+        grid-template-columns: 1fr 1fr; 
+        justify-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
     }
 `
