@@ -43,3 +43,10 @@ export const shadows = {
 export const limits = {
     maxWidth: '1300px',
 }
+
+export const stylesShadow = `
+border-radius: 30px;
+background: #e0e0e0;
+box-shadow: 15px 15px 30px #bebebe,
+           -15px -15px 30px #ffffff;
+           `
