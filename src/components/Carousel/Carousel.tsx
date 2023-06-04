@@ -10,7 +10,7 @@ const Carousel: React.FC<CarouselProps> = ({images}) => {
 		<CarouselContainerStyle>
 			<BtnCarouselStyle>{`<`}</BtnCarouselStyle>
 			<ImageContainerStyle>
-				
+				<img src={images[0]} alt="" />
 			</ImageContainerStyle>
 			<BtnCarouselStyle>{`>`}</BtnCarouselStyle>
 		</CarouselContainerStyle>
