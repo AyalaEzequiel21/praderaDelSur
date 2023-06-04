@@ -93,13 +93,23 @@ Error generating stack: `+s.message+`
     justify-content: center;
     margin: 10px 0;
 `,LL=G.div`
+    align-items: center;
     border-radius: 5px;
     box-shadow: ${ff.shadowStyle};
-    height: 125px;
-    width: 125px;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    width: 150px;
+
+    & img{
+        border-radius: 5px;
+        height: 99%;
+        width: 99%;
+    }
 `,vp=G.button`
     align-items: center;
     color: ${fe.green};
+    cursor: pointer;
     display: flex;
     font-weight: 700;
     justify-content: center;
