@@ -5,6 +5,8 @@ import { FormContact } from '../Form';
 export interface FormContainerProps {
 }
 
+// this component is the container for the form's title and ther form contact
+
 const FormContainer: React.FC<FormContainerProps> = () => {
 	return (
 		<FormContainerStyle>

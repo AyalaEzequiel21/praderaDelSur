@@ -1,5 +1,7 @@
 export * from './Button';
 export * from './Button/styled-component/button.styled';
+export * from './Carousel';
+export * from './Carousel/styled-components/carousel.styled';
 export * from './Footer';
 export * from './Footer/styled-component/footer.styled';
 export * from './Header';
@@ -12,3 +14,4 @@ export * from './Separator';
 export * from './Separator/styled-component/separator.styled';
 export * from './Splash';
 export * from './Splash/styled-component/splash.styled';
+export * from './index';

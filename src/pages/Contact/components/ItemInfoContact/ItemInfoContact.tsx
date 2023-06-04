@@ -6,6 +6,8 @@ export interface ItemInfoContactProps {
 	itemContactData: ItemInfoContactInterface
 }
 
+// this component receives data as a parameter, it will be used to render a contact' item
+
 const ItemInfoContact: React.FC<ItemInfoContactProps> = ({itemContactData}) => {
 	return (
 		<ItemInfoContainerStyle>

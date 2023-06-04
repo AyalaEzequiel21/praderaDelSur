@@ -3,6 +3,7 @@ import { ContactStyle, FormContainer, InfoContact, MessageContact } from '.';
 import { useGlobalContext } from '../../context/GlobalContext';
 import { breakpoints } from '../../data';
 import { Separator } from '../../components';
+import { infoContactData } from '../../data';
 
 export interface ContactProps {
 }
@@ -13,7 +14,7 @@ const Contact: React.FC<ContactProps> = () => {
 	return (
 		<ContactStyle>
 			<MessageContact/>
-			<InfoContact/>
+			<InfoContact data={infoContactData}/>
 			{windowWidth < breakpoints.mediumW && <Separator/>}
 			<FormContainer/>
 		</ContactStyle>

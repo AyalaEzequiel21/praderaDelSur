@@ -11,7 +11,7 @@ const Nav: React.FC<NavProps> = () => {
 		<NavContainerStyle>
 			<NavMenuStyle>
 				<ItemNavStyle><Link to={'/'}>INICIO</Link></ItemNavStyle>
-				<ItemNavStyle><Link to={'#'}>PRODUCTOS</Link></ItemNavStyle>
+				<ItemNavStyle><Link to={'/products'}>PRODUCTOS</Link></ItemNavStyle>
 				<ItemNavStyle><Link to={'#'}>TIENDA {<AiOutlineShoppingCart/>}</Link></ItemNavStyle>
 				<ItemNavStyle><Link to={'/contact'}>CONTACTO</Link></ItemNavStyle>
 			</NavMenuStyle>
