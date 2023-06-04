@@ -91,7 +91,7 @@ box-shadow: 15px 15px 30px #bebebe,
         font-weight: bold;
         transition: 0.2s;
     }
-`,SL=({images:e})=>k.jsxs(LL,{children:[k.jsx(vp,{children:"<"}),k.jsx(EL,{children:k.jsx("img",{src:e[0],alt:""})}),k.jsx(vp,{children:">"})]}),LL=G.div`
+`,SL=({images:e})=>{const[t,n]=u.useState(0),[r,i]=u.useState(e[t]),s=(a,l)=>{const c=a+1;c===l.length?n(0):n(c)},o=(a,l)=>{const c=a-1;c<0?n(l.length-1):n(c)};return u.useEffect(()=>{i(e[t])},[t]),k.jsxs(LL,{children:[k.jsx(vp,{onClick:()=>o(t,e),children:"<"}),k.jsx(EL,{children:k.jsx("img",{src:r,alt:"Product's image"})}),k.jsx(vp,{onClick:()=>s(t,e),children:">"})]})},LL=G.div`
     align-items: center;
     display: flex;
     grid-area: carousel;
@@ -779,7 +779,7 @@ PERFORMANCE OF THIS SOFTWARE.
         width: 85%;
     }
     
-`,TT=()=>k.jsxs(bT,{children:[k.jsx(CT,{}),k.jsx(wT,{data:eL}),k.jsx(sa,{}),k.jsx(vT,{dataCategories:XS,title:KS,subTitle:QS}),k.jsx(sa,{}),k.jsx(kT,{data:nL})]}),OT=({product:e})=>k.jsxs(MT,{children:[k.jsx("h3",{children:e.title}),k.jsx(SL,{images:e.images}),k.jsx(jT,{children:e.items.map(t=>k.jsx($T,{children:t}))})]}),MT=G.article`
+`,TT=()=>k.jsxs(bT,{children:[k.jsx(CT,{}),k.jsx(wT,{data:eL}),k.jsx(sa,{}),k.jsx(vT,{dataCategories:XS,title:KS,subTitle:QS}),k.jsx(sa,{}),k.jsx(kT,{data:nL})]}),OT=({product:e})=>k.jsxs(MT,{children:[k.jsx("h3",{children:e.title}),k.jsx(SL,{images:e.images}),k.jsx(jT,{children:e.items.map(t=>k.jsx($T,{children:t},t))})]}),MT=G.article`
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -825,7 +825,7 @@ PERFORMANCE OF THIS SOFTWARE.
     @media(min-width: ${ue.largePX}){
         margin: 15px;
     }
-`,IT=()=>{function e(t,n){return t===n.length-1}return k.jsxs(RT,{children:[k.jsx("h1",{children:xL}),k.jsx(zT,{children:gp.map((t,n)=>k.jsxs(k.Fragment,{children:[k.jsx(OT,{product:t},t.id),!e(n,gp)&&k.jsx(sa,{})]}))})]})},RT=G.section`
+`,IT=()=>{function e(t,n){return t===n.length-1}return k.jsxs(RT,{children:[k.jsx("h1",{children:xL}),k.jsx(zT,{children:gp.map((t,n)=>k.jsxs("div",{children:[k.jsx(OT,{product:t},t.id),!e(n,gp)&&k.jsx(sa,{},n)]},t.id))})]})},RT=G.section`
     align-items: center;
     display: flex;
     flex-direction: column;
