@@ -14,7 +14,7 @@ const CardProduct: React.FC<CardProductProps> = ({product}) => {
 			<Carousel images={product.images}/>
 			<ListProductsCard>
 				{product.items.map(product => (
-					<ProductItemCard>{product}</ProductItemCard>
+					<ProductItemCard key={product}>{product}</ProductItemCard>
 				))}
 			</ListProductsCard>
 		</CardProductContainerStyle>

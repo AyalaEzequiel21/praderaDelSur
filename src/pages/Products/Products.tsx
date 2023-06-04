@@ -18,10 +18,10 @@ const Products: React.FC<ProductsProps> = () => {
 			<h1>{messageProducts}</h1>
 			<CardsProductsContainer>
 				{productsList.map((item, index) => (
-					<>
+					<div key={item.id}>
 						<CardProduct key={item.id} product={item}/>
-						{!isTheLast(index, productsList) && <Separator/>}
-					</>
+						{!isTheLast(index, productsList) && <Separator key={index}/>}
+					</div>
 				))}
 			</CardsProductsContainer>
 		</ProductsContainerStyle>
