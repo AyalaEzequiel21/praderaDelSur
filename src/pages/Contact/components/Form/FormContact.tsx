@@ -13,7 +13,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 export interface FormContactProps {
 }
 
-interface FormContactValues {
+export interface FormContactValues {
 	fullName: string; 
 	email: string;
 	message: string;
