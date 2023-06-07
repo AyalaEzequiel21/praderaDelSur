@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { colors, fontSizes } from "../../../data";
+import { titleStyles } from "../../../data";
 
 export const ProductsContainerStyle = styled.section`
     align-items: center;
@@ -11,11 +11,8 @@ export const ProductsContainerStyle = styled.section`
     max-width: 1500px;
 
     & h1{
-        color: ${colors.green};
-        font-size: ${fontSizes.subTitle};
+        ${titleStyles};
         margin-bottom: 10px;
-        text-align: center;
-        max-width: 1000px;
     }
 `
 

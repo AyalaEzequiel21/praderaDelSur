@@ -1,27 +1,19 @@
 import { styled } from "styled-components";
-import { breakpoints, colors, fontSizes, limits } from "../../../../../data";
+import { breakpoints, textStyle, titleStyles } from "../../../../../data";
 
 
 export const CategoriesContainerStyle = styled.div`
     align-items: center;
-    color: ${colors.green};
     display: flex;
     flex-direction: column;
 
     & h1{
-        font-size: ${fontSizes.subTitle};
+        ${titleStyles};
     };
 
     & p{
-        font-size: ${fontSizes.text};
+        ${textStyle};
         margin: 10px 0;
-        padding: 0 20px;
-        text-align: center;
-
-        @media(min-width: ${breakpoints.largePX}){
-            max-width: ${limits.maxWidth};
-            padding: 0 220px;
-        }
     }
 `
 

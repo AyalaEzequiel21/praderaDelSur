@@ -44,7 +44,7 @@ export const BtnCarouselStyle = styled.button`
     cursor: pointer;
     display: flex;
     filter: drop-shadow(4px 4px 2px rgba(124, 119, 121, 0.5));
-    font-size: ${fontSizes.subTitle};
+    font-size: ${fontSizes.title};
     font-weight: 700;
     justify-content: center;
 `

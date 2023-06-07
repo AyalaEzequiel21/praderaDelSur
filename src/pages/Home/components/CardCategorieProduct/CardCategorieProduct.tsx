@@ -2,6 +2,7 @@ import React from 'react';
 import { Categorie } from '../../../../data';
 import { ActionContainerCardStyle, CardCategorieStyle } from '.';
 import { Button } from '../../../../components';
+import { useNavigate } from 'react-router-dom';
 
 export interface CardCategorieProductProps {
 	categorie: Categorie,
@@ -11,8 +12,10 @@ export interface CardCategorieProductProps {
 
 const CardCategorieProduct: React.FC<CardCategorieProductProps> = ({categorie}) => {
 
+	const navigate = useNavigate()
+
 	const handleClick = ()=> {
-		console.log();
+		navigate(`/products#${categorie.title}`)
 	}
 
 	return (

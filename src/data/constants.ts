@@ -10,9 +10,9 @@ export const colors = {
 // FONT SIZES //
 
 export const fontSizes = {
-    titleMobile: '2rem',
-    title: '2.5rem',
-    subTitle: '1.8rem',
+    splashTextMobile: '2rem',
+    splashText: '2.5rem',
+    title: '1.6rem',
     itemNav: '1.2rem',
     btn: '1.4rem',
     text: '1.1rem',
@@ -44,9 +44,32 @@ export const limits = {
     maxWidth: '1300px',
 }
 
+
+
+// ELEMENTS STYLES 
+
 export const stylesShadow = `
 border-radius: 30px;
 background: #e0e0e0;
 box-shadow: 15px 15px 30px #bebebe,
            -15px -15px 30px #ffffff;
-           `
+`
+
+export const titleStyles = `
+    color: ${colors.green};
+    font-size: ${fontSizes.title};
+    font-weight: 700;
+    text-align: center;
+    max-width: 700px;
+`
+
+export const textStyle = `
+    color: ${colors.green};
+    font-size: ${fontSizes.text};
+    text-align: center; 
+
+    @media(min-width: ${breakpoints.mediumPX}){
+        padding: 0 50px;
+        max-width: 615px;
+    }
+`

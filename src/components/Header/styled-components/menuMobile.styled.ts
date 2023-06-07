@@ -8,7 +8,7 @@ export const MenuContainerStyle = styled.div`
 
 export const HamburgerBtnStyle = styled.button`
     color: ${colors.white};
-    font-size: ${fontSizes.title};
+    font-size: ${fontSizes.splashText};
 `
 
 export const slideIn = keyframes`

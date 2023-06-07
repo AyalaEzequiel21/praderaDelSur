@@ -73,7 +73,7 @@ export const ActionContainerSplashStyle = styled.div`
         };
 
         @media(min-width: ${breakpoints.largePX}){
-            font-size: ${fontSizes.subTitle};
+            font-size: ${fontSizes.title};
             font-weight: 500;
         }
     };
