@@ -49,10 +49,9 @@ export const limits = {
 // ELEMENTS STYLES 
 
 export const stylesShadow = `
-border-radius: 30px;
-background: #e0e0e0;
-box-shadow: 15px 15px 30px #bebebe,
-           -15px -15px 30px #ffffff;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px #bebebe,
+            -15px -15px 30px #ffffff;
 `
 
 export const titleStyles = `

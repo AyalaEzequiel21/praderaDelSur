@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { breakpoints, colors, fontSizes, shadows } from "../../../../../data";
+import { breakpoints, colors, fontSizes, shadows, stylesShadow } from "../../../../../data";
 
 interface CardCategorieStyleProp {
     imageUrl: string,
@@ -11,8 +11,7 @@ export const CardCategorieStyle = styled.article<CardCategorieStyleProp>`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 25px;
-    box-shadow: ${shadows.shadowCardStyle};
+    ${stylesShadow};
     display: flex;
     height: 14.5rem;
     justify-content: center;

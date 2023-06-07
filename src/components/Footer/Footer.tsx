@@ -10,7 +10,7 @@ export interface FooterProps{
 const Footer: React.FC<FooterProps> = () => {
 	return (
 		<FooterStyle >
-			<Link to={'/'}><LogoFooterStyle src={LogoImg}/></Link>
+			<Link to={'/#header'}><LogoFooterStyle src={LogoImg}/></Link>
 			<ContainerDataStyle>
 				<h5>PRADERA DEL SUR</h5>
 				<p>Lunes a viernes 05 a 14 hs - Sábados 06 a 11 hs</p>

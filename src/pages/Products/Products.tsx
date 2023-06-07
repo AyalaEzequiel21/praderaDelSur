@@ -15,7 +15,7 @@ const Products: React.FC<ProductsProps> = () => {
 
 	return (
 		<ProductsContainerStyle>
-			<h1>{messageProducts}</h1>
+			<p>{messageProducts}</p>
 			<CardsProductsContainer>
 				{productsList.map((item, index) => (
 					<div key={item.id} id={item.title}>

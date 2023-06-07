@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { breakpoints, colors, fontSizes } from "../../../../../data";
+import { breakpoints, colors, fontSizes, stylesShadow } from "../../../../../data";
 
 interface SplashContainerProps {
     imageUrl: string;
@@ -11,7 +11,7 @@ export const SplashContainerStyle = styled.div<SplashContainerProps>`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
+    ${stylesShadow};
     display: flex;
     height: 16rem;
     margin: 3rem 0;

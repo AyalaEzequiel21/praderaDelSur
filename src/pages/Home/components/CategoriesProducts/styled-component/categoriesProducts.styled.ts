@@ -9,6 +9,7 @@ export const CategoriesContainerStyle = styled.div`
 
     & h1{
         ${titleStyles};
+        margin-bottom: 35px;
     };
 
     & p{

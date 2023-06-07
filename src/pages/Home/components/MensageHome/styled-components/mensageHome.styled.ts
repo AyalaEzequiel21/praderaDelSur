@@ -16,7 +16,7 @@ export const MensageHomeStyle = styled.div`
 
     & h1{
         ${titleStyles};
-        margin-bottom: 15px;
+        margin: 35px 0;
     };
 
     & p{

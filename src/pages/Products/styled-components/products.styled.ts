@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { titleStyles } from "../../../data";
+import { textStyle } from "../../../data";
 
 export const ProductsContainerStyle = styled.section`
     align-items: center;
@@ -8,16 +8,15 @@ export const ProductsContainerStyle = styled.section`
     justify-content: center;
     padding: 30px 0;
     width: 90%;
-    max-width: 1500px;
+    max-width: 1200px;
 
-    & h1{
-        ${titleStyles};
-        margin-bottom: 10px;
+    & p{
+        ${textStyle};
+        margin: 35px 0;
     }
 `
 
 export const CardsProductsContainer = styled.div`
-    
     margin: 20px 0;
     width: 100%;
 `

@@ -23,7 +23,7 @@ export const ContactStyle = styled.section`
         padding: 70px 10px;
 
         & h1{
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
     }
 `

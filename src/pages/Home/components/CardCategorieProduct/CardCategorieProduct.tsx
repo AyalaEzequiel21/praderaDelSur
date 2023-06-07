@@ -16,6 +16,7 @@ const CardCategorieProduct: React.FC<CardCategorieProductProps> = ({categorie}) 
 
 	const handleClick = ()=> {
 		navigate(`/products#${categorie.title}`)
+
 	}
 
 	return (

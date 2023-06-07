@@ -10,6 +10,10 @@ export const CarouselContainerStyle = styled.div`
     margin: 10px 0;
     width: 100%;
     max-width: 410px;
+
+    @media(min-width: ${breakpoints.largePX}){
+        max-width: 500px;
+    };
 `
 
 export const ImageContainerStyle = styled.div`
@@ -26,8 +30,8 @@ export const ImageContainerStyle = styled.div`
     };
 
     @media(min-width: ${breakpoints.largePX}){
-        height: 350px;
-        width: 330px;
+        height: 400px;
+        width: 410px;
     };
 
 

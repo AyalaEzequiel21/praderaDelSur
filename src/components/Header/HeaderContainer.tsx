@@ -12,7 +12,7 @@ interface HeaderContainerProps {
 
 const HeaderContainer: React.FC<HeaderContainerProps> = () => {
 	return (
-		<HeaderContainerStyle >
+		<HeaderContainerStyle id='header'>
 			<Header/>
 		</HeaderContainerStyle>
 	)
