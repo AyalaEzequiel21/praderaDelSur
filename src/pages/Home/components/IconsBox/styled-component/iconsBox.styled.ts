@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { breakpoints, colors, fontSizes, shadows, stylesShadow } from "../../../../../data";
+import { breakpoints, colors, fontSizes, stylesShadow } from "../../../../../data";
 
 
 export const IconsBoxStyle = styled.div`
