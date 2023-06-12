@@ -1,19 +1,15 @@
-// import { render, screen } from "@testing-library/react";
-// import { CardCategorieProduct } from "../pages";
-// // import { categories } from "../data";
+import { render } from "@testing-library/react"
+import { CardCategorieProduct } from "../pages"
 
-// const product = {
-//         id: 1,
-//         title: 'PRODUCTOS FRESCOS',
-//         imageUrl: ''
-// }
+const mackup = {
+    id: 1, 
+    title: 'Productos X',
+    imageUrl: ''
+}
 
-
-// describe("<CardcategorieProduct/>", ()=> {
-//     test("render the button in the CardCategorieProduct component", () => {
-//         render(<CardCategorieProduct categorie={product}/>)
-//         const btnElement = screen.getByText(/Ver todos/i)
-
-//         expect(btnElement).toBeInTheDocument()
-//     })
-// })
+describe('CardCategoryProducts', () => {
+    it('should render correctly', () => {
+        const card = render(<CardCategorieProduct categorie={mackup}/>)
+        expect(card).toBeTruthy()
+    })
+})
