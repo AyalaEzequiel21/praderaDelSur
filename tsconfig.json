@@ -8,7 +8,6 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
-    "skipLibCheck": true,
 
 
     /* Bundler mode */
@@ -24,6 +23,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "jest.config.js", "src/setupTests.ts"],
+  "include": ["src", "jest.config.mjs", "src/setupTests.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
