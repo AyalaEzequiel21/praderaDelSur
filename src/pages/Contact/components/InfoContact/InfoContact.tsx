@@ -16,7 +16,7 @@ const InfoContact: React.FC<InfoContactProps> = ({data}) => {
 			<Map/>
 			<ItemsInfoContainerStyle>
 				{data.map(item=> (
-					<ItemInfoContact itemContactData={item}/>
+					<ItemInfoContact itemContactData={item} key={item.id}/>
 				))}
 			</ItemsInfoContainerStyle>
 		</InfoContactContainerStyle>

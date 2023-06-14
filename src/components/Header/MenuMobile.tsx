@@ -18,7 +18,7 @@ const MenuMoble: React.FC<MenuMobileProps> = () => {
                 <MenuStyle onClick={toggleMenu} isOpen={isOpen}>
                     <ItemMenu><Link to={'/'}>INICIO</Link></ItemMenu>
                     <ItemMenu><Link to={'/products'}>PRODUCTOS</Link></ItemMenu>
-                    <ItemMenu><Link to={'/'}>TIENDA {<AiOutlineShoppingCart/>}</Link></ItemMenu>
+                    <ItemMenu><Link to={'/market'}>TIENDA {<AiOutlineShoppingCart/>}</Link></ItemMenu>
                     <ItemMenu><Link to={'/contact'}>CONTACTO</Link></ItemMenu>
                 </MenuStyle>
             )}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {  Field, ErrorMessage, Form, Formik  } from 'formik';
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 import { InputContainerStyle } from '.';
 import { KEYS_EMAILJS, KEY_RECAPTCHA } from '../../../../data';
 import { Button } from '../../../../components';
@@ -44,26 +44,27 @@ const FormContact: React.FC<FormContactProps> = () => {
 		}
 	};
 
-	const handleSubmit = async (
+	const handleSubmit =  (
 		values: FormContactValues,
 		{ setSubmitting, resetForm }: { setSubmitting: (isSubmitting: boolean) => void; resetForm: () => void }
 	) => {
-		if(isCaptchaVerified){
-			try {
+			if(isCaptchaVerified){
 				const formattedFormValues = values as unknown as Record<string, unknown>
+
 				// Envía el correo electrónico utilizando EmailJS
-				await emailjs.send(KEYS_EMAILJS.SERVICE_ID, KEYS_EMAILJS.TEMPLATE_ID, formattedFormValues, KEYS_EMAILJS.USER_ID)
-	
+				emailjs.send(KEYS_EMAILJS.SERVICE_ID, KEYS_EMAILJS.TEMPLATE_ID, formattedFormValues, KEYS_EMAILJS.USER_ID)
+				.then((response)=> {
 				// limpia el formulario despues del envio exitoso
-				resetForm()
-				alert('El mensaje ha sido enviado correctamente.')
-			} catch (error) {
-				alert('Hubo un error al enviar el mensaje. Por favor, inténtalo nuevamente más tarde. ')
-			} finally {
+					if(response.status == 200){
+						resetForm()
+						alert('El mensaje ha sido enviado correctamente.')
+					}
+				}), (error) => {
+					alert('Hubo un error al enviar el mensaje. Por favor, inténtalo nuevamente más tarde. ')
+				}
 				setSubmitting(false)
-			}	
+			}
 		}	
-	}
 
 	return (
 		<Formik<FormContactValues>
@@ -71,7 +72,7 @@ const FormContact: React.FC<FormContactProps> = () => {
 			validationSchema={validationSchema}
 			onSubmit={handleSubmit}
 		>
-			<Form>
+			<Form id='form'>
 				<InputContainerStyle>
 					<label htmlFor='fullName'>Nombre y Apellido</label>
 					<Field type='text' id='fullName' name='fullName'/>
@@ -92,6 +93,6 @@ const FormContact: React.FC<FormContactProps> = () => {
 			</Form>
 		</Formik>
 	)
-};
+}
 
 export default FormContact;

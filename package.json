@@ -12,6 +12,7 @@
     "test": "jest --config=jest.config.cjs"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@react-google-maps/api": "^2.18.1",
@@ -19,7 +20,6 @@
     "@types/jsdom": "^21.1.1",
     "@types/react-google-recaptcha": "^2.1.5",
     "deep-equal": "^2.2.1",
-    "emailjs-com": "^3.2.0",
     "formik": "^2.4.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

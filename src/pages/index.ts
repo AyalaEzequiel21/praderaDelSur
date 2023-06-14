@@ -24,6 +24,8 @@ export * from './Home/components/SplashContactUs';
 export * from './Home/components/SplashContactUs/styled-component/splashContactUs.styled';
 export * from './Home';
 export * from './Home/styled-components/home.styled';
+export * from './Market';
+export * from './Market/styled-components/market.styled';
 export * from './Products/components/CardProduct';
 export * from './Products/components/CardProduct/styled-components/cardProduct.styled';
 export * from './Products';
